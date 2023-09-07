@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="icon" type="image/png" href="weather-app.png" />
+    <link rel="stylesheet" href="CSS File.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="left">
+                <form action="" onsubmit="event.preventDefault()">
+                    <div class="heading">
+                        <h1>Temperature Convertor</h1>
+                    </div>
+
+                    <div class="values">
+                        <label>Please Select Degree</label>
+                        <div class="inputvalues">
+                            <input type="number" name="" id="deg" class="deg_input" required>
+                            <select class="input" id="select-input">
+                                <option value="C" selected>&deg;C</option>
+                                <option value="F">&deg;F</option>
+                                <option value="K">&deg;K</option>
+                            </select>
+                        </div>  
+                    </div>
+
+                    <div class="convertin">
+                        <label>Convert In</label>
+                        <select class="convert-in" id="selectConversionType">
+                            <option value="F" selected>Fahrenheit(&deg;F)</option>
+                            <option value="C">Celcius (&deg;C)</option>
+                            <option value="K">Kelvin (&deg;K)</option>
+                        </select>
+                    </div>
+                    <button class="btn" onclick="convert()">
+                        Convert
+                    </button>
+                </form>
+            </div>
+            <div class="right">
+                <p id="result"></p>
+                <!-- <h6 id="degree">&deg;</h6>
+                <h5 id="degree">F</h5> -->
+            </div>
+
+        </div>
+    </div>
+    <script src="Coverter JS File.js"></script>
+</body>
+
+</html>
